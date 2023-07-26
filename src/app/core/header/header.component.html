@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-sm">
+    <ul class="nav navbar-nav">
+        <a style="font-family: 'Courier New', Courier, monospace; font-size: 20px;"
+            class="navbar-brand">Company</a>
+        <li class="nav-item active">
+            <a class="nav-link" routerLink="home">Home</a>
+        </li>
+        <li class="nav-item" *ngIf="loginService?.loggedIn">
+            <a class="nav-link" routerLink="gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="about">About</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </li> -->
+    </ul>
+    <ul class="nav navbar-nav navbar-right" style="margin-left: auto;">
+        <li class="nav-item" *ngIf="!loginService?.loggedIn">
+            <a class="nav-link" (click)="loginDialog()">Login</a>
+        </li>
+        <li class="nav-item" *ngIf="loginService?.loggedIn">
+            <a class="nav-link" href="#" (click)="logout()">Logout</a>
+        </li>
+    </ul>
+</nav>
+<!-- 
+<mat-toolbar color="primary">
+    <span>LOGO</span>
+     <a mat-button routerLink="home">Home</a>
+     <a mat-button>About</a>
+     <a mat-button>Contact</a>
+   </mat-toolbar> -->

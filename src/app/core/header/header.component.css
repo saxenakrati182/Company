@@ -1,0 +1,16 @@
+.mat-toolbar {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.navbar{
+    background-color: powderblue;
+}
+
+span, a {
+    padding: 5px 5px !important;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
