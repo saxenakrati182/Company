@@ -8,3 +8,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: black !important;
     background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
+
+      
+.mat-snack-bar-container {
+    background-color: powderblue;
+}
+
+.mat-snack-bar-container.snackbar-fail{
+    background-color: #f99;
+}

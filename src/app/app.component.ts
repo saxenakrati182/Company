@@ -9,6 +9,6 @@ export class AppComponent implements OnInit {
   title = 'media-company';
 
   ngOnInit() {
-  
+    sessionStorage.removeItem("user_id");
   }
 }
